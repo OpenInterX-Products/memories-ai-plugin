@@ -1,0 +1,17 @@
+{
+  "name": "Recall from the private library",
+  "skills": ["memories"],
+  "query": "Find the soccer goals in my videos",
+  "expected_behavior": [
+    "If the namespace is unknown, calls list_unique_ids first to discover it",
+    "Calls search_videos with search_type BY_CLIP and the chosen unique_id",
+    "Does NOT use search_public_videos or search_web_videos (this is the private library)",
+    "Optionally calls get_audio_transcription or get_video_caption to add detail on a videoNo",
+    "Summarizes results for a human and never dumps raw JSON"
+  ],
+  "success_criteria": [
+    "Returns ranked clips with videoNo plus start/end timestamps",
+    "Every reported result cites its videoNo and time",
+    "If list_unique_ids returns empty, reports there is no indexed data instead of guessing a namespace"
+  ]
+}

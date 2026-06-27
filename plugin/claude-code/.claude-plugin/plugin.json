@@ -1,0 +1,8 @@
+{
+  "name": "memories",
+  "version": "0.1.0",
+  "description": "Query your Memories.ai video memories from Claude Code (search, recall, summarize, drill-down).",
+  "author": { "name": "Memories.ai" },
+  "homepage": "https://memories.ai",
+  "keywords": ["memories", "video", "personal-context", "mcp"]
+}

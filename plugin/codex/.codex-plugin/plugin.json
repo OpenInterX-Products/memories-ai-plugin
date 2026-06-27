@@ -1,0 +1,9 @@
+{
+  "name": "memories",
+  "version": "0.1.0",
+  "description": "Query your Memories.ai video memories from Codex (search, recall, summarize, drill-down).",
+  "author": { "name": "Memories.ai" },
+  "homepage": "https://memories.ai",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

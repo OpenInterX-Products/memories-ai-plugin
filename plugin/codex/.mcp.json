@@ -1,0 +1,9 @@
+{
+  "_comment": "HTTP MCP。先在 mcp-server 里跑 `npm run start:http`（监听 :8787，从 .env 读配置），Codex 再用此 URL 连接。上线时换成 https://mcp.memories.ai/mcp。",
+  "mcpServers": {
+    "memories": {
+      "type": "http",
+      "url": "http://localhost:8787/mcp"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "memories-local",
+  "description": "Local marketplace for developing/testing the Memories plugin.",
+  "owner": { "name": "Memories.ai" },
+  "plugins": [
+    {
+      "name": "memories",
+      "source": "./plugin/claude-code",
+      "description": "Query your Memories.ai video memories from Claude Code."
+    }
+  ]
+}
