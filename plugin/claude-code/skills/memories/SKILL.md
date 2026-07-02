@@ -12,7 +12,7 @@ invariants, use the decision table to pick the right tool family, then open the 
 ## Invariants (always apply)
 
 - **Namespace (`unique_id`)** — Private-library tools (`search_videos`, `search_audio_transcripts`,
-  `list_videos`, `get_*`, `upload_video_from_url`, `upload_video_from_file`, `delete_videos`) are isolated per namespace. Pass
+  `list_videos`, `get_*`, `upload_video_from_url`, `delete_videos`) are isolated per namespace. Pass
   the right `unique_id`; it must match the one used at upload. Call `list_unique_ids` when unknown;
   omit only for the account default. Analyze / transcribe / scrape / web-search work on arbitrary
   URLs and are **not** namespaced.
@@ -27,7 +27,7 @@ invariants, use the decision table to pick the right tool family, then open the 
 | The user wants to… | Tools | Read |
 |---|---|---|
 | Search / ask about **their own indexed videos** | `search_videos`, `search_audio_transcripts`, `list_videos`, `get_video_metadata`, `get_video_caption`, `get_audio_transcription`, `list_unique_ids` | [reference/search-and-recall.md](reference/search-and-recall.md) |
-| **Add** a video to the library (public URL or local file), or delete | `upload_video_from_url`, `upload_video_from_file`, `delete_videos` | [reference/ingest-and-manage.md](reference/ingest-and-manage.md) |
+| **Add** a video to the library (public URL), or delete | `upload_video_from_url`, `delete_videos` | [reference/ingest-and-manage.md](reference/ingest-and-manage.md) |
 | Ask about / **transcribe an arbitrary URL** | `analyze_video`, `analyze_image`, `transcribe_audio`, `scrape_social_video` | [reference/analyze-and-transcribe.md](reference/analyze-and-transcribe.md) |
 | Find **public / live-web** videos | `search_public_videos`, `search_web_videos` | [reference/discovery.md](reference/discovery.md) |
 
@@ -46,7 +46,7 @@ Full signatures for all 15 tools: [reference/tool-reference.md](reference/tool-r
 **Library — read:** `search_videos` (semantic) · `search_audio_transcripts` (exact text) ·
 `list_videos` · `get_video_metadata` · `get_video_caption` (visual) · `get_audio_transcription`
 (spoken) · `list_unique_ids`.
-**Library — write:** `upload_video_from_url` (public URL) · `upload_video_from_file` (local file) · `delete_videos`.
+**Library — write:** `upload_video_from_url` (public URL) · `delete_videos`.
 **Analyze any URL:** `analyze_video` · `analyze_image` · `transcribe_audio` · `scrape_social_video`.
 **Discover:** `search_public_videos` (pre-indexed) · `search_web_videos` (live web, slow).
 

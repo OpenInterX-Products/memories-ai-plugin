@@ -1,6 +1,6 @@
 {
-  "name": "memories-local",
-  "interface": { "displayName": "Memories (local)" },
+  "name": "memories-ai",
+  "interface": { "displayName": "Memories" },
   "plugins": [
     {
       "name": "memories",

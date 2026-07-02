@@ -2,7 +2,7 @@
   "mcpServers": {
     "memories": {
       "type": "http",
-      "url": "http://localhost:8787/mcp"
+      "url": "https://mcp.memories.ai/mcp"
     }
   }
 }

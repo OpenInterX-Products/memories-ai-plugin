@@ -1,0 +1,16 @@
+{
+  "name": "Analyze a non-library video URL",
+  "skills": ["memories"],
+  "query": "Summarize this video: https://example.com/talks/keynote.mp4",
+  "expected_behavior": [
+    "Recognizes the video is not in the library and uses analyze_video (not search_videos/get_*)",
+    "Passes a model id with a provider prefix (e.g. gemini:gemini-2.5-flash)",
+    "Passes a clear prompt derived from the user's request",
+    "Returns the model's text answer formatted for the user, not the raw response object"
+  ],
+  "success_criteria": [
+    "analyze_video is called with a provider-prefixed model",
+    "Does not attempt library tools for a URL that was never indexed",
+    "Final answer is human-readable prose, not raw JSON"
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "name": "memories-local",
-  "description": "Local marketplace for developing/testing the Memories plugin.",
+  "name": "memories-ai",
+  "description": "Memories.ai plugins — search, recall, and analyze your indexed video memories.",
   "owner": { "name": "Memories.ai" },
   "plugins": [
     {

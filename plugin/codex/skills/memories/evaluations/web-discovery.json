@@ -1,0 +1,16 @@
+{
+  "name": "Discover public / live-web videos",
+  "skills": ["memories"],
+  "query": "Find recent YouTube videos explaining the offside rule",
+  "expected_behavior": [
+    "Chooses a discovery tool (search_public_videos or search_web_videos), NOT the private-library search_videos",
+    "For 'recent', prefers search_web_videos with an appropriate time_frame, or notes the speed tradeoff vs search_public_videos",
+    "Restricts to the requested platform (youtube) where the tool supports it",
+    "Presents results as public content with references/links, not as the user's own library"
+  ],
+  "success_criteria": [
+    "Uses a discovery tool, never search_videos, for content the user does not own",
+    "If search_web_videos is used, warns it may take minutes and surfaces both the answer and video_references",
+    "Makes clear the results are public, not the user's library"
+  ]
+}

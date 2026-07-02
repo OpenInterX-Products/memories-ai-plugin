@@ -1,0 +1,18 @@
+{
+  "name": "Index a URL then search it",
+  "skills": ["memories"],
+  "query": "Add https://example.com/clips/derby.mp4 to my library and find the penalty",
+  "expected_behavior": [
+    "Calls upload_video_from_url with the URL and a unique_id",
+    "Ensures indexing reached PARSE — either via wait_for_indexing or by polling get_video_metadata",
+    "Does not search before status is PARSE",
+    "Calls search_videos with the SAME unique_id used at upload",
+    "Summarizes the found moment with videoNo + timestamp"
+  ],
+  "success_criteria": [
+    "search_videos uses the same unique_id as the upload",
+    "Agent waits for / confirms PARSE before searching",
+    "Reports the videoNo and the matching start/end time",
+    "Surfaces FAIL or a still-indexing state honestly rather than claiming a false result"
+  ]
+}
