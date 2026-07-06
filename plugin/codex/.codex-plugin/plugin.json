@@ -20,6 +20,7 @@
     "websiteURL": "https://memories.ai",
     "privacyPolicyURL": "https://memories.ai/legal/privacy",
     "termsOfServiceURL": "https://memories.ai/legal/terms-of-service",
-    "logo": "./assets/logo.jpg"
+    "logo": "./assets/logo.jpg",
+    "composerIcon": "./assets/mark.png"
   }
 }
