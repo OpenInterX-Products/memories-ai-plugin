@@ -2,11 +2,21 @@
   "name": "memories",
   "version": "0.1.0",
   "description": "Query your Memories.ai video memories from Codex (search, recall, summarize, drill-down).",
-  "author": { "name": "Memories.ai" },
+  "author": { "name": "Memories.ai", "email": "ben.zhou@memories.ai", "url": "https://memories.ai" },
   "homepage": "https://memories.ai",
   "repository": "https://github.com/OpenInterX-Products/memories-ai-plugin",
   "license": "MIT",
+  "keywords": ["memories", "video", "personal-context", "mcp", "transcription", "search"],
   "skills": "./skills/",
   "commands": "./commands/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Memories",
+    "shortDescription": "Search, recall & analyze your video memories",
+    "longDescription": "Long-term visual memory for Codex: search, recall, and reason over your own indexed video library — by what's seen, said, or described — plus index public URLs, transcribe audio, and discover live-web videos.",
+    "developerName": "Memories.ai",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://memories.ai"
+  }
 }
