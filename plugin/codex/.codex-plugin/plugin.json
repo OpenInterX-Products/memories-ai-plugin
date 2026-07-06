@@ -14,6 +14,9 @@
     "displayName": "Memories",
     "shortDescription": "Search, recall & analyze your video memories",
     "longDescription": "Long-term visual memory for Codex: search, recall, and reason over your own indexed video library — by what's seen, said, or described — plus index public URLs, transcribe audio, and discover live-web videos.",
-    "category": "Productivity"
+    "developerName": "Memories.ai",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://memories.ai"
   }
 }
