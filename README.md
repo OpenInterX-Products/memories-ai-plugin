@@ -38,7 +38,8 @@ codex plugin add memories@memories-ai
 Or install it from the **Plugins** screen in the Codex app. On install a browser opens to sign in to
 your memories.ai account and authorize the connection — nothing to run locally.
 
-Then just ask, or use the bundled commands: `search`, `add`, `analyze`, `transcribe`, `web`.
+Then just ask, or type `@` to invoke the Memories plugin and its bundled commands (`search`, `add`,
+`analyze`, `transcribe`, `web`).
 
 > OpenAI's official curated Codex plugin directory is invite/curated for now — self-serve submission
 > is not open yet, so install via the repo marketplace above until it is.
