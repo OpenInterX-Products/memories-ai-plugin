@@ -41,8 +41,8 @@ your memories.ai account and authorize the connection — nothing to run locally
 Then just ask, or type `@` to invoke the Memories plugin and its bundled commands (`search`, `add`,
 `analyze`, `transcribe`, `web`).
 
-> OpenAI's official curated Codex plugin directory is invite/curated for now — self-serve submission
-> is not open yet, so install via the repo marketplace above until it is.
+> OpenAI's official Codex plugin directory is OpenAI-curated for now — self-serve submission isn't
+> open yet, so install via the repo marketplace above until it is.
 
 ## How it works
 
