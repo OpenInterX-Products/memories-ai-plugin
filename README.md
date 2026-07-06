@@ -27,9 +27,22 @@ Then just ask (or use the commands): `/memories:search <query>`, `/memories:add 
 
 ## Install (Codex)
 
-The Codex build lives in `plugin/codex/` (same skills + commands). Codex is distributed through its
-own plugin directory rather than the GitHub marketplace — see the Codex plugin docs for the current
-submission/install flow.
+The Codex build lives in `plugin/codex/` (same skills + commands). Install it from this repo as a
+marketplace source:
+
+```bash
+codex plugin marketplace add OpenInterX-Products/memories-ai-plugin
+codex plugin add memories@memories-ai
+```
+
+Or install it from the **Plugins** screen in the Codex app. On install a browser opens to sign in to
+your memories.ai account and authorize the connection — nothing to run locally.
+
+Then just ask, or type `@` to invoke the Memories plugin and its bundled commands (`search`, `add`,
+`analyze`, `transcribe`, `web`).
+
+> OpenAI's official Codex plugin directory is OpenAI-curated for now — self-serve submission isn't
+> open yet, so install via the repo marketplace above until it is.
 
 ## How it works
 
