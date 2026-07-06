@@ -4,5 +4,7 @@
   "description": "Query your Memories.ai video memories from Claude Code (search, recall, summarize, drill-down).",
   "author": { "name": "Memories.ai" },
   "homepage": "https://memories.ai",
+  "repository": "https://github.com/OpenInterX-Products/memories-ai-plugin",
+  "license": "MIT",
   "keywords": ["memories", "video", "personal-context", "mcp"]
 }

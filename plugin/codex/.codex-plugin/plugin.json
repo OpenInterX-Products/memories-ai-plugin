@@ -4,6 +4,8 @@
   "description": "Query your Memories.ai video memories from Codex (search, recall, summarize, drill-down).",
   "author": { "name": "Memories.ai" },
   "homepage": "https://memories.ai",
+  "repository": "https://github.com/OpenInterX-Products/memories-ai-plugin",
+  "license": "MIT",
   "skills": "./skills/",
   "commands": "./commands/",
   "mcpServers": "./.mcp.json"
