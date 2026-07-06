@@ -19,6 +19,7 @@
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://memories.ai",
     "privacyPolicyURL": "https://memories.ai/legal/privacy",
-    "termsOfServiceURL": "https://memories.ai/legal/terms-of-service"
+    "termsOfServiceURL": "https://memories.ai/legal/terms-of-service",
+    "logo": "./assets/logo.jpg"
   }
 }
